@@ -1,0 +1,42 @@
+Exercise 2: isAdult()
+const Adult = true;
+const age = 22;
+
+if (Adult) {
+  if (age >= 21) {
+    console.log("Adult");
+  } else {
+    console.log("Kids");
+  }
+}
+
+
+Exercise 3: isCharAVowel()
+const singleCharacter = true;
+const character = "vowel";
+
+if (singleCharacter) {
+  if (character === "vowel") {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+
+
+Exercise 4: generateEmail()
+function generateEmail(name) {
+  console.log(`${name}@example.com`);
+}
+
+generateEmail("johnsmith");
+
+
+
+Exercise 5: greetUser()
+function greetUser(name, timeOfDay) {
+  return `Good ${timeOfDay}, ${name}!`;
+}
+
+console.log(greetUser("Sam", "morning"));
+
