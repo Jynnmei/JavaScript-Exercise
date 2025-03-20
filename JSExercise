@@ -12,24 +12,22 @@ if (Adult) {
 
 
 Exercise 3: isCharAVowel()
-const singleCharacter = true;
-const character = "vowel";
-
-if (singleCharacter) {
-  if (character === "vowel") {
-    console.log("true");
-  } else {
-    console.log("false");
+function singleCharacter(vowel) {
+  if (vowel === "a" || "e" || "i" || "o" || "u") return "true";
+  else {
+    return "false";
   }
 }
 
+console.log(singleCharacter("a"));
+
 
 Exercise 4: generateEmail()
-function generateEmail(name) {
-  console.log(`${name}@example.com`);
+function generateEmail(name, domain) {
+  return `${name}@${domain}`;
 }
 
-generateEmail("johnsmith");
+console.log(generateEmail("johnsmith", "example.com"));
 
 
 
@@ -120,8 +118,11 @@ console.log(createUsername("Samantha", "Green"));
 
 
 Exercise 12: numArgs()
-function numArgs() {
-  return arguments.length;
+function numArgs(...a) {
+  return a.length;
 }
 
 console.log(numArgs(1, 2, 3, 4));
+console.log(numArgs(1, 2, 3));
+console.log(numArgs(1, 2));
+console.log(numArgs(1));
